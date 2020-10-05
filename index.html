@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Buddy's Favorite Picture</title>
+		<link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<div id="demo-wrap">
+			<div class="label-container">
+				<p id="alpha-label">α</p>
+			</div>
+			<input type="range" min="0" max="1000" value="700" class="slider" id="alpha-slider" />
+			<canvas id="myCanvas" width="500" height="300"></canvas>
+			<div id="tick-mark-wrap">
+				<p id="zero-tick">0</p>
+				<p id="one-tick">1</p>
+				<p id="p-nought-tick">
+					<i>P<sub>0</sub></i>
+				</p>
+			</div>
+			<div class="label-container" id="p-label-container">
+				<p id="p-label"><i>P</i></p>
+			</div>
+			<input type="range" min="0" max="1000" value="800" class="slider" id="p-slider" />
+			<div class="check-container">
+				<button class="checkbox" id="null-true-button"></button>
+				<p class="probability-text" id="null-true-text">H<sub>0</sub> is true, P(Type I Error) = α =</p>
+			</div>
+			<div class="check-container" id="null-false-container">
+				<button class="checkbox" id="null-false-button"></button>
+				<p class="probability-text" id="null-false-text">H<sub>0</sub> is false, P(Type II Error) = β =</p>
+			</div>
+			<p id="n-label">Sample size</p>
+			<input type="range" min="0" max="1000" value="255" class="slider" id="n-slider" />
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
